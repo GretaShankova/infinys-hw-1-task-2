@@ -34,8 +34,8 @@ void printFibonacciSeries (int fibIndex){
 
 int findClosestFibonacciNumber (int findClosest){
 
-    int currentFibonacciNumber=0;
-    int currentIndex =0;
+    int currentFibonacciNumber=1;
+    int currentIndex =1;
 
     if (findClosest<=0){
         return 1;
