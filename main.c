@@ -3,10 +3,17 @@
 
 int fibonacciCalculation(int fibIndex)
 {
-    if (fibIndex <= 1) {
-        return fibIndex;
-    }
-    return fibonacciCalculation(fibIndex - 1) + fibonacciCalculation(fibIndex - 2);
+    
+    int firstIndex = 1, secondIndex = 1, nextIndex;
+
+
+    for (int i = 1; i <= fibIndex-2; ++i)
+    {
+        nextIndex = firstIndex + secondIndex;
+        firstIndex = secondIndex;
+        secondIndex = nextIndex;
+    }    
+    return nextIndex;
 }
 
 
